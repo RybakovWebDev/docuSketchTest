@@ -1,0 +1,11 @@
+<div class="icon-container">
+  <button class="icon-generator__btn" (click)="showRandomIcon()">
+    Generate Random Icon
+  </button>
+  <fa-icon
+    class="icon"
+    *ngFor="let icon of icons"
+    [icon]="['fas', icon]"
+    size="lg"
+  ></fa-icon>
+</div>
